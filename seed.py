@@ -171,3 +171,4 @@ athletes = [
 collection.drop()
 collection.insert_many(athletes)      
 collection.create_index([("name", "text")])
+        
