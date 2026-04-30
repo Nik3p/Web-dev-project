@@ -20,11 +20,23 @@ def like():
 
 @app.route('/search')     # tha to kanei o giannis 
 def search():
-  mongo.db.netflex.find({"$search":"value"}       ).list().
+  nameSearched=request.args.get("name","") 
+  # an den valei name, epistrefei empty string, dld to ""
+  return jsonify(list(mongo.db.athletes.find({"name": {"$regex":nameSearched,"$options":"i"}}).sort("price",-1)))
+# to $regex psaxnei na vrei an mia akolouthia p exei grapsei o allos yparxei se kapoio name
+# an grapseis gi sou vriskei to giannis ( gi is in giannis)
+#to "$options": "i" . to option shmainei rythmiseis kai to i shmainei case Insensitive
+# ara mikra kai kefalaia ola sto idio saki 
+#shoutout thano an to diavazeis auto 
 
 
+ # /popular: Αναπτύξτε ένα GET request που θα επιστρέφει μία λίστα με τα top-5 πιο
+#δημοφιλή προϊόντα με βάση των αριθμό των Likes.
 @app.route('/popular') # tha to kanei o giannis 
-def popular():
+def get5MostPopular():
+   return jsonify(list(mongo.db.athletes.find().sort("likes",-1).limit(5)))
+   # to find ta fernei ola, to sort likes-1 krataei ta top me likes apo max pros min
+   #to limit 5 krataei ta 5 max likes, to list ta kanei lista kai to jsonify ta kanei json
    
 
 
