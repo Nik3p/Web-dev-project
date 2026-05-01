@@ -32,8 +32,6 @@ let athletes= await response.json()
 }
 
 
-
-
  function generateCard( athlete){ // pairnei 1 item athlete apo to json kai 
     // xrhsimopoiwntas ta athlete.photo, athlete.name etc ftiaxnei thn karta
     // vazw olh thn karta me backticks kai stis metavlites vazw ${athlete.field }
@@ -55,6 +53,7 @@ return `<div class="col">
 window.onload = function() { // perimenei na fortwsei olh  h selida k meta trexei h function
     
     const urlParams = new URLSearchParams(window.location.search)
+    if (!document.getElementById('search-input')) return  // elegxei an eimaste sto items.html ( mono to items exei search-input)
     const nameFromUrl = urlParams.get('name')
 //epeidh an kapoios psaksei apo to homepage ton kanei transfer sto items pou ginete to search
 // me to window.location.search krataei oti egrapse o allos ( dld oti einai meta to ?) dld to query string
@@ -74,4 +73,6 @@ window.onload = function() { // perimenei na fortwsei olh  h selida k meta trexe
     
 }
 
-
+if (!document.getElementById('search-input')) {  // an eimaste sto homepage, ( apousia search input) trexei to popular()
+    popular()
+}
