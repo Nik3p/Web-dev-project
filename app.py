@@ -20,13 +20,21 @@ def like():
 
 @app.route('/search')     # tha to kanei o giannis 
 def search():
-  nameSearched=request.args.get("name","") 
-  # an den valei name, epistrefei empty string, dld to ""
-  return jsonify(list(mongo.db.athletes.find({"name": {"$regex":nameSearched,"$options":"i"}}).sort("price",-1)))
+   nameSearched=request.args.get("name","")  #an den valei name, epistrefei empty string, dld to ""
+   query={"name": {"$regex":nameSearched,"$options":"i"}}
+   results=mongo.db.athletes.find(query).sort("price",-1)
+   clean_results=[]
+   for athlete in results:
+      athlete['_id']=str(athlete['_id'])
+      clean_results.append(athlete)
+   return jsonify(clean_results)
+
+
 # to $regex psaxnei na vrei an mia akolouthia p exei grapsei o allos yparxei se kapoio name
 # an grapseis gi sou vriskei to giannis ( gi is in giannis)
 #to "$options": "i" . to option shmainei rythmiseis kai to i shmainei case Insensitive
 # ara mikra kai kefalaia ola sto idio saki 
+# to id tou athlete to kanume string gt to _id ths mongodb einai special object pou den to diavazei h py3
 #shoutout thano an to diavazeis auto 
 
 
@@ -38,6 +46,7 @@ def get5MostPopular():
    # to find ta fernei ola, to sort likes-1 krataei ta top me likes apo max pros min
    #to limit 5 krataei ta 5 max likes, to list ta kanei lista kai to jsonify ta kanei json
    
+
 
 
 
