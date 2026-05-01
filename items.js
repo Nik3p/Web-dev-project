@@ -24,7 +24,7 @@ let athletes= await response.json()
     container.innerHTML=""
     // ftiaxnume xwro na boun oi kartes, kai adiazume tocontainer apo palies.
 
-  for (let i=0;i<response.length;i++)
+  for (let i=0;i<athletes.length;i++)
   {
  container.innerHTML+=generateCard(athletes[i])
 
@@ -49,3 +49,25 @@ return `<div class="col">
                     </div>
                 </div>  `
  }
+
+
+window.onload = function() { // perimenei na fortwsei olh  h selida k meta trexei h function
+    
+    const urlParams = new URLSearchParams(window.location.search)
+    const nameFromUrl = urlParams.get('name')
+//epeidh an kapoios psaksei apo to homepage ton kanei transfer sto items pou ginete to search
+// me to window.location.search krataei oti egrapse o allos ( dld oti einai meta to ?) dld to query string
+//  to URLSearchParams pernei to query string kai to spaei se lista me metavlites, px name , status
+// sto urlParams apothikeuontai oles oi metavlites tou query kai tis kanw access me to get .
+    
+    if (nameFromUrl) {
+        //an vrei name sto query 
+        document.getElementById('search-input').value = nameFromUrl
+       // paei stou items to search kai vazei to name pou egrapse o allos sto homepage kai to psaxnei
+        //mono tou
+        search()}
+        
+    
+}
+
+
