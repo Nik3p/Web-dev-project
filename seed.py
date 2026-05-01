@@ -178,7 +178,7 @@ athletes = [
     },
     {
         "name": "Chris Bumstead",
-        "photo": "assets/images/chris_bumstead.jpg",
+        "photo": "assets/images/bumstead.jpg",
         "description": "4x Classic Physique Olympia. Modern era icon.",
         "likes": 0,
         "nationality": "Canadian",
