@@ -24,14 +24,14 @@ athletes = [
         "price": 9500
     },
     {
-        "name": "Branch Warren",
-        "photo": "assets/images/branch_warren.jpg",
-        "description": "2x Arnold Classic champion. Known for his gritty and intense training style.",
-        "likes": 0,
-        "nationality": "American",
-        "era": "2000s",
-        "price": 4500
-    },
+    "name": "Giannis Kallionakis",
+    "photo": "assets/images/GiannisKallionakis.jpg",
+    "description": "Creator of the site, Best coder out of all 20 bodybuilders ",
+    "likes": 0,
+    "nationality": "Greek",
+    "era": "2020s",
+    "price": 9000
+},
     {
         "name": "Dexter Jackson",
         "photo": "assets/images/dexter_jackson.jpg",

@@ -37,7 +37,7 @@ let athletes= await response.json()
     // vazw olh thn karta me backticks kai stis metavlites vazw ${athlete.field }
 return `<div class="col">
                     <div class="card h-100" id="card-${athlete._id}">
-                        <img src="${athlete.photo}" class="card-img-top" alt="${athlete.name}" style="height: 200px; object-fit: cover; object-position: top;">
+                        <img src="${athlete.photo}" class="card-img-top" alt="${athlete.name}" style="height: 200px; object-fit: ${athlete.name === 'Giannis Kallionakis' ? 'contain' : 'cover'}; object-position: top; background-color: ${athlete.name === 'Giannis Kallionakis' ? '#111' : 'transparent'};">
                         <div class="card-body">
                             <h5 class="card-title">${athlete.name}</h5>
                         </div>
