@@ -7,7 +7,7 @@ collection = db["athletes"]
 athletes = [
     {
         "name": "Arnold Schwarzenegger",
-        "photo": "images/arnold.jpg",
+        "photo": "assets/images/arnold.jpg",
         "description": "7x Mr. Olympia. The face of bodybuilding worldwide.",
         "likes": 0,
         "nationality": "Austrian",
@@ -151,7 +151,7 @@ athletes = [
     },
     {
         "name": "Tom Platz",
-        "photo": "images/tom_platz.jpg",
+        "photo": "assets/images/tom_platz.jpg",
         "description": "Known as The Golden Eagle. Legendary for his incredible leg development.",
         "likes": 0,
         "nationality": "American",
