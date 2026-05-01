@@ -12,7 +12,7 @@
 
 
 </head>
-<body>
+<body onload="popular()">
 
 
     <header>
@@ -34,7 +34,7 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search"  method="GET" action="items.html">
-                        <input class="form-control me-2" name="search" type="search" placeholder="Search" aria-label="Search"/>
+                        <input class="form-control me-2" name="name" type="search" placeholder="Search" aria-label="Search"/>
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
@@ -52,70 +52,8 @@
         <h2 id="popular">5 most popular bodybuilders of the week:</h2>
       <div class="container-fluid px-4 py-4">
             <div class="row row-cols-1 row-cols-md-5 g-3" id="athletes-container">
-
-                <div class="col">
-                    <div class="card h-100" id="popular-0">
-                        <img src="assets/images/arnold.jpg" class="card-img-top" alt="Arnold" style="height: 200px; object-fit: cover; object-position: top;">
-                        <div class="card-body">
-                            <h5 class="card-title">Arnold Schwarzenegger</h5>
-                        </div>
-                            <div class="card-footer bg-dark text-warning text-center">
-                                <span> 💪 <span class="likes-counter">0 </span> likes </span>
-                            </div>
-                    </div>
-                </div>  
-
-                <div class="col">
-                    <div class="card h-100" id="popular-1">
-                        <img src="assets/images/ronnie.jpg" class="card-img-top" alt="Ronnie" style="height: 200px; object-fit: cover; object-position: top;">
-                        <div class="card-body">
-                            <h5 class="card-title">Ronnie Coleman</h5>
-                        </div>
-                            <div class="card-footer bg-dark text-warning text-center">
-                                <span > 💪 <span class="likes-counter">0 </span> likes </span>
-                            </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100" id="popular-2">
-                        <img src="assets/images/bumstead.jpg" class="card-img-top" alt="Cbum" style="height: 200px; object-fit: cover; object-position: top;">
-                        <div class="card-body">
-                            <h5 class="card-title">Chris Bumstead</h5>
-                        </div>
-                            <div class="card-footer bg-dark text-warning text-center">
-                                <span > 💪 <span class="likes-counter">0 </span> likes </span>
-                            </div>
-                            
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card h-100" id="popular-3">
-                        <img src="assets/images/dorian_yates.jpg" class="card-img-top" alt="Cbum" style="height: 200px; object-fit: cover; object-position: top;">
-                        <div class="card-body">
-                            <h5 class="card-title">dorian yates</h5>
-                        </div>
-                            <div class="card-footer bg-dark text-warning text-center">
-                                <span > 💪 <span class="likes-counter">0 </span> likes </span>
-                            </div>
-                            
-                    </div>
-                </div>
-
-
-                  <div class="col">
-                    <div class="card h-100" id="popular-4">
-                        <img src="assets/images/kevin_levrone.jpg" class="card-img-top" alt="Cbum" style="height: 200px; object-fit: cover; object-position: top;">
-                        <div class="card-body">
-                            <h5 class="card-title">Kevin Levrone</h5>
-                        </div>
-                            <div class="card-footer bg-dark text-warning text-center">
-                                <span > 💪 <span class="likes-counter">0 </span> likes </span>
-                            </div>
-                            
-                    </div>
-                </div>   
+ // edw tha gemisei tis kartes monh ths h JS 
+                
             </div>
           
         </div> 

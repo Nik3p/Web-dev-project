@@ -48,7 +48,12 @@ def search():
 #δημοφιλή προϊόντα με βάση των αριθμό των Likes.
 @app.route('/popular') 
 def get5MostPopular():
-   return jsonify(list(mongo.db.athletes.find().sort("likes",-1).limit(5)))
+   results = mongo.db.athletes.find().sort("likes", -1).limit(5)
+   clean_results = []
+   for athlete in results:
+      athlete['_id'] = str(athlete['_id'])  #kanw to object id string gia na borei na to diavasei h python
+      clean_results.append(athlete)
+   return jsonify(clean_results)
    # to find ta fernei ola, to sort likes-1 krataei ta top me likes apo max pros min
    #to limit 5 krataei ta 5 max likes, to list ta kanei lista kai to jsonify ta kanei json
    
