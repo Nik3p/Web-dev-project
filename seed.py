@@ -11,143 +11,161 @@ athletes = [
         "description": "7x Mr. Olympia. The face of bodybuilding worldwide.",
         "likes": 0,
         "nationality": "Austrian",
-        "era": "1970s"
+        "era": "1970s",
+        "price": 10000
     },
     {
         "name": "Ronnie Coleman",
-        "photo": "images/ronnie.jpg",
+        "photo": "assets/images/ronnie.jpg",
         "description": "8x Mr. Olympia. Known for his iconic lifts and unmatched mass.",
         "likes": 0,
         "nationality": "American",
-        "era": "2000s"
+        "era": "2000s",
+        "price": 9500
     },
     {
         "name": "Branch Warren",
-        "photo": "images/branch_warren.jpg",
+        "photo": "assets/images/branch_warren.jpg",
         "description": "2x Arnold Classic champion. Known for his gritty and intense training style.",
         "likes": 0,
         "nationality": "American",
-        "era": "2000s"
+        "era": "2000s",
+        "price": 4500
     },
     {
         "name": "Dexter Jackson",
-        "photo": "images/dexter_jackson.jpg",
+        "photo": "assets/images/dexter_jackson.jpg",
         "description": "Mr. Olympia 2008. Longest competitive career in bodybuilding history.",
         "likes": 0,
         "nationality": "American",
-        "era": "2000s"
+        "era": "2000s",
+        "price": 6500
     },
     {
         "name": "Dorian Yates",
-        "photo": "images/dorian_yates.jpg",
+        "photo": "assets/images/dorian_yates.jpg",
         "description": "6x Mr. Olympia. Pioneer of the mass monster era.",
         "likes": 0,
         "nationality": "British",
-        "era": "1990s"
+        "era": "1990s",
+        "price": 7500
     },
     {
         "name": "Flex Wheeler",
-        "photo": "images/flex_wheeler.jpg",
+        "photo": "assets/images/flex_wheeler.jpg",
         "description": "4x Arnold Classic champion. Called the most genetically gifted ever.",
         "likes": 0,
         "nationality": "American",
-        "era": "1990s"
+        "era": "1990s",
+        "price": 6500
     },
     {
         "name": "Franco Columbu",
-        "photo": "images/franco_columbu.jpg",
+        "photo": "assets/images/franco_columbu.jpg",
         "description": "2x Mr. Olympia and Arnold's closest training partner.",
         "likes": 0,
         "nationality": "Italian",
-        "era": "1970s"
+        "era": "1970s",
+        "price": 5500
     },
     {
         "name": "Hidetada Yamagishi",
-        "photo": "images/hidetada_yamagishi.jpg",
+        "photo": "assets/images/hidetada_yamagishi.jpg",
         "description": "Top IFBB Pro. First Japanese athlete to compete at Mr. Olympia.",
         "likes": 0,
         "nationality": "Japanese",
-        "era": "2010s"
+        "era": "2010s",
+        "price": 4000
     },
     {
         "name": "Jay Cutler",
-        "photo": "images/jay_cutler.webp",
+        "photo": "assets/images/jay_cutler.webp",
         "description": "4x Mr. Olympia. Known for incredible size and work ethic.",
         "likes": 0,
         "nationality": "American",
-        "era": "2000s"
+        "era": "2000s",
+        "price": 8000
     },
     {
         "name": "Kai Greene",
-        "photo": "images/kai_greene.webp",
+        "photo": "assets/images/kai_greene.webp",
         "description": "3x Arnold Classic champion. Known for his artistic approach to bodybuilding.",
         "likes": 0,
         "nationality": "American",
-        "era": "2010s"
+        "era": "2010s",
+        "price": 7000
     },
     {
         "name": "Kevin Levrone",
-        "photo": "images/kevin_levrone.jpg",
+        "photo": "assets/images/kevin_levrone.jpg",
         "description": "4x Mr. Olympia runner-up. Known as the Maryland Muscle Machine.",
         "likes": 0,
         "nationality": "American",
-        "era": "1990s"
+        "era": "1990s",
+        "price": 6000
     },
     {
         "name": "Lee Haney",
-        "photo": "images/lee_haney.jpg",
+        "photo": "assets/images/lee_haney.jpg",
         "description": "8x Mr. Olympia. First to win 8 consecutive titles.",
         "likes": 0,
         "nationality": "American",
-        "era": "1980s"
+        "era": "1980s",
+        "price": 7000
     },
     {
         "name": "Lou Ferrigno",
-        "photo": "images/lou_ferrigno.jpg",
+        "photo": "assets/images/lou_ferrigno.jpg",
         "description": "2x IFBB Mr. Universe. Known for his role as The Incredible Hulk.",
         "likes": 0,
         "nationality": "American",
-        "era": "1970s"
+        "era": "1970s",
+        "price": 6000
     },
     {
         "name": "Phil Heath",
-        "photo": "images/phil_heath.jpg",
+        "photo": "assets/images/phil_heath.jpg",
         "description": "7x Mr. Olympia. Exceptional symmetry and conditioning.",
         "likes": 0,
         "nationality": "American",
-        "era": "2010s"
+        "era": "2010s",
+        "price": 8500
     },
     {
         "name": "Rich Gaspari",
-        "photo": "images/rich_gaspari.webp",
+        "photo": "assets/images/rich_gaspari.webp",
         "description": "3x Mr. Olympia runner-up. Pioneer of conditioning in bodybuilding.",
         "likes": 0,
         "nationality": "American",
-        "era": "1980s"
+        "era": "1980s",
+        "price": 5000
     },
     {
         "name": "Sergio Oliva",
-        "photo": "images/sergio_oliva.jpg",
+        "photo": "assets/images/sergio_oliva.jpg",
         "description": "3x Mr. Olympia. The only man to beat Arnold at the Olympia.",
         "likes": 0,
         "nationality": "Cuban",
-        "era": "1960s"
+        "era": "1960s",
+        "price": 5000
     },
     {
         "name": "Shawn Ray",
-        "photo": "images/shawn_ray.jpg",
+        "photo": "assets/images/shawn_ray.jpg",
         "description": "Top Olympia competitor throughout the 1990s. Known for perfect conditioning.",
         "likes": 0,
         "nationality": "American",
-        "era": "1990s"
+        "era": "1990s",
+        "price": 5000
     },
     {
         "name": "Shawn Rhoden",
-        "photo": "images/shawn_rhoden.webp",
+        "photo": "assets/images/shawn_rhoden.webp",
         "description": "Mr. Olympia 2018. Known for his incredible aesthetics and conditioning.",
         "likes": 0,
         "nationality": "American",
-        "era": "2010s"
+        "era": "2010s",
+        "price": 5500
     },
     {
         "name": "Tom Platz",
@@ -155,15 +173,17 @@ athletes = [
         "description": "Known as The Golden Eagle. Legendary for his incredible leg development.",
         "likes": 0,
         "nationality": "American",
-        "era": "1980s"
+        "era": "1980s",
+        "price": 5500
     },
     {
         "name": "Chris Bumstead",
-        "photo": "images/chris_bumstead.jpg",
+        "photo": "assets/images/chris_bumstead.jpg",
         "description": "4x Classic Physique Olympia. Modern era icon.",
         "likes": 0,
         "nationality": "Canadian",
-        "era": "2020s"
+        "era": "2020s",
+        "price": 9000
     }
 ]
 
@@ -171,4 +191,3 @@ athletes = [
 collection.drop()
 collection.insert_many(athletes)      
 collection.create_index([("name", "text")])
-        
