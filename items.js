@@ -1,6 +1,6 @@
 
 async function popular(){
-    let  response= await fetch('/popular') // pairnoume ta data apo DB
+    let  response= await fetch('http://127.0.0.1:5000/popular') // pairnoume ta data apo DB
     let popArray=await(response.json())
     let container = document.getElementById('athletes-container') // ftiaxnume container me data
     container.innerHTML=""  // adiazume to  mesa tou container gia na to gemisume swsta 
@@ -15,7 +15,7 @@ async function search(){
     query=document.getElementById('search-input').value
     // sto items, sto searchbar, pernume to value apo oti grapsei mesa sto bar .
 
-  let response=await fetch('/search?name=' +query)
+  let response=await fetch('http://127.0.0.1:5000/search?name=' + query)
   // psaxnume oti egrapse an yparxei sthn db 
 
 let athletes= await response.json()
@@ -45,6 +45,7 @@ return `<div class="col">
                         </div>
                             <div class="card-footer bg-dark text-warning text-center">
                                 <span> 💪 <span class="likes-counter">${athlete.likes} </span> likes </span>
+                                <button onclick="like('${athlete._id}')" class="btn btn-sm btn-warning mt-1">Heavy! 💪</button>
                             </div>
                     </div>
                 </div>  `
@@ -66,6 +67,9 @@ window.onload = function() { // perimenei na fortwsei olh  h selida k meta trexe
        // paei stou items to search kai vazei to name pou egrapse o allos sto homepage kai to psaxnei
         //mono tou
         search()}
+        else{
+            search()
+        }
         
     
 }
