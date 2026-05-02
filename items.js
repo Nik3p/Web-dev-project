@@ -76,3 +76,17 @@ window.onload = function() { // perimenei na fortwsei olh  h selida k meta trexe
 if (!document.getElementById('search-input')) {  // an eimaste sto homepage, ( apousia search input) trexei to popular()
     popular()
 }
+
+async function like(id) {
+    let response = await fetch('http://127.0.0.1:5000/like',{
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({id: id})
+    })
+    let data = await response.json()
+
+    let counter = document.querySelector(`#card-${id} .likes-counter`)
+    counter.innerText = parseInt(counter.innerText) + 1
+}
