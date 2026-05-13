@@ -7,7 +7,7 @@ collection = db["athletes"]
 athletes = [
     {
         "name": "Arnold Schwarzenegger",
-        "photo": "assets/images/arnold.jpg",
+        "photo": "/static/assets/images/arnold.jpg",
         "description": "7x Mr. Olympia. The face of bodybuilding worldwide.",
         "likes": 0,
         "nationality": "Austrian",
@@ -16,7 +16,7 @@ athletes = [
     },
     {
         "name": "Ronnie Coleman",
-        "photo": "assets/images/ronnie.jpg",
+        "photo": "/static/assets/images/ronnie.jpg",
         "description": "8x Mr. Olympia. Known for his iconic lifts and unmatched mass.",
         "likes": 0,
         "nationality": "American",
@@ -25,7 +25,7 @@ athletes = [
     },
     {
     "name": "Giannis Kallionakis",
-    "photo": "assets/images/GiannisKallionakis.jpg",
+    "photo": "/static/assets/images/GiannisKallionakis.jpg",
     "description": "Creator of the site, Best coder out of all 20 bodybuilders ",
     "likes": 0,
     "nationality": "Greek",
@@ -34,7 +34,7 @@ athletes = [
 },
     {
         "name": "Dexter Jackson",
-        "photo": "assets/images/dexter_jackson.jpg",
+        "photo": "/static/assets/images/dexter_jackson.jpg",
         "description": "Mr. Olympia 2008. Longest competitive career in bodybuilding history.",
         "likes": 0,
         "nationality": "American",
@@ -43,7 +43,7 @@ athletes = [
     },
     {
         "name": "Dorian Yates",
-        "photo": "assets/images/dorian_yates.jpg",
+        "photo": "/static/assets/images/dorian_yates.jpg",
         "description": "6x Mr. Olympia. Pioneer of the mass monster era.",
         "likes": 0,
         "nationality": "British",
@@ -52,7 +52,7 @@ athletes = [
     },
     {
         "name": "Flex Wheeler",
-        "photo": "assets/images/flex_wheeler.jpg",
+        "photo": "/static/assets/images/flex_wheeler.jpg",
         "description": "4x Arnold Classic champion. Called the most genetically gifted ever.",
         "likes": 0,
         "nationality": "American",
@@ -61,7 +61,7 @@ athletes = [
     },
     {
         "name": "Franco Columbu",
-        "photo": "assets/images/franco_columbu.jpg",
+        "photo": "/static/assets/images/franco_columbu.jpg",
         "description": "2x Mr. Olympia and Arnold's closest training partner.",
         "likes": 0,
         "nationality": "Italian",
@@ -70,7 +70,7 @@ athletes = [
     },
     {
         "name": "Hidetada Yamagishi",
-        "photo": "assets/images/hidetada_yamagishi.jpg",
+        "photo": "/static/assets/images/hidetada_yamagishi.jpg",
         "description": "Top IFBB Pro. First Japanese athlete to compete at Mr. Olympia.",
         "likes": 0,
         "nationality": "Japanese",
@@ -79,7 +79,7 @@ athletes = [
     },
     {
         "name": "Jay Cutler",
-        "photo": "assets/images/jay_cutler.webp",
+        "photo": "/static/assets/images/jay_cutler.webp",
         "description": "4x Mr. Olympia. Known for incredible size and work ethic.",
         "likes": 0,
         "nationality": "American",
@@ -88,7 +88,7 @@ athletes = [
     },
     {
         "name": "Kai Greene",
-        "photo": "assets/images/kai_greene.webp",
+        "photo": "/static/assets/images/kai_greene.webp",
         "description": "3x Arnold Classic champion. Known for his artistic approach to bodybuilding.",
         "likes": 0,
         "nationality": "American",
@@ -97,7 +97,7 @@ athletes = [
     },
     {
         "name": "Kevin Levrone",
-        "photo": "assets/images/kevin_levrone.jpg",
+        "photo": "/static/assets/images/kevin_levrone.jpg",
         "description": "4x Mr. Olympia runner-up. Known as the Maryland Muscle Machine.",
         "likes": 0,
         "nationality": "American",
@@ -106,7 +106,7 @@ athletes = [
     },
     {
         "name": "Lee Haney",
-        "photo": "assets/images/lee_haney.jpg",
+        "photo": "/static/assets/images/lee_haney.jpg",
         "description": "8x Mr. Olympia. First to win 8 consecutive titles.",
         "likes": 0,
         "nationality": "American",
@@ -115,7 +115,7 @@ athletes = [
     },
     {
         "name": "Lou Ferrigno",
-        "photo": "assets/images/lou_ferrigno.jpg",
+        "photo": "/static/assets/images/lou_ferrigno.jpg",
         "description": "2x IFBB Mr. Universe. Known for his role as The Incredible Hulk.",
         "likes": 0,
         "nationality": "American",
@@ -124,7 +124,7 @@ athletes = [
     },
     {
         "name": "Phil Heath",
-        "photo": "assets/images/phil_heath.jpg",
+        "photo": "/static/assets/images/phil_heath.jpg",
         "description": "7x Mr. Olympia. Exceptional symmetry and conditioning.",
         "likes": 0,
         "nationality": "American",
@@ -133,7 +133,7 @@ athletes = [
     },
     {
         "name": "Rich Gaspari",
-        "photo": "assets/images/rich_gaspari.webp",
+        "photo": "/static/assets/images/rich_gaspari.webp",
         "description": "3x Mr. Olympia runner-up. Pioneer of conditioning in bodybuilding.",
         "likes": 0,
         "nationality": "American",
@@ -142,7 +142,7 @@ athletes = [
     },
     {
         "name": "Sergio Oliva",
-        "photo": "assets/images/sergio_oliva.jpg",
+        "photo": "/static/assets/images/sergio_oliva.jpg",
         "description": "3x Mr. Olympia. The only man to beat Arnold at the Olympia.",
         "likes": 0,
         "nationality": "Cuban",
@@ -151,7 +151,7 @@ athletes = [
     },
     {
         "name": "Shawn Ray",
-        "photo": "assets/images/shawn_ray.jpg",
+        "photo": "/static/assets/images/shawn_ray.jpg",
         "description": "Top Olympia competitor throughout the 1990s. Known for perfect conditioning.",
         "likes": 0,
         "nationality": "American",
@@ -160,7 +160,7 @@ athletes = [
     },
     {
         "name": "Shawn Rhoden",
-        "photo": "assets/images/shawn_rhoden.webp",
+        "photo": "/static/assets/images/shawn_rhoden.webp",
         "description": "Mr. Olympia 2018. Known for his incredible aesthetics and conditioning.",
         "likes": 0,
         "nationality": "American",
@@ -169,7 +169,7 @@ athletes = [
     },
     {
         "name": "Tom Platz",
-        "photo": "assets/images/tom_platz.jpg",
+        "photo": "/static/assets/images/tom_platz.jpg",
         "description": "Known as The Golden Eagle. Legendary for his incredible leg development.",
         "likes": 0,
         "nationality": "American",
@@ -178,7 +178,7 @@ athletes = [
     },
     {
         "name": "Chris Bumstead",
-        "photo": "assets/images/bumstead.jpg",
+        "photo": "/static/assets/images/bumstead.jpg",
         "description": "4x Classic Physique Olympia. Modern era icon.",
         "likes": 0,
         "nationality": "Canadian",
