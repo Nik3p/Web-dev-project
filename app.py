@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template, redirect, url_for
 from flask_pymongo import PyMongo
 from flask_cors import CORS
 import numpy as np
@@ -11,6 +11,13 @@ CORS(app)
 app.config["MONGO_URI"]="mongodb://localhost:27017/netflex"
 mongo= PyMongo(app)
 
+@app.route('/')
+def homepage():
+   return render_template('homepage.html')
+
+@app.route('/items')
+def items():
+   return render_template('items.html')
 
 @app.route ('/like',methods=['POST'])
 def like():
@@ -18,11 +25,6 @@ def like():
    id = data["id"]
    mongo.db.athletes.update_one({"_id": ObjectId(id)},{"$inc": {"likes": 1}})
    return jsonify({"message": "Liked!"})
-
-   
-
-
-
 
 @app.route('/search')    
 def search():
@@ -34,7 +36,6 @@ def search():
       athlete['_id']=str(athlete['_id'])
       clean_results.append(athlete)
    return jsonify(clean_results)
-
 
 # to $regex psaxnei na vrei an mia akolouthia p exei grapsei o allos yparxei se kapoio name
 # an grapseis gi sou vriskei to giannis ( gi is in giannis)
@@ -57,13 +58,5 @@ def get5MostPopular():
    # to find ta fernei ola, to sort likes-1 krataei ta top me likes apo max pros min
    #to limit 5 krataei ta 5 max likes, to list ta kanei lista kai to jsonify ta kanei json
    
-
-
-
-
-
-
-
-
 if __name__=='__main__':
     app.run(host='127.0.0.1', port=5000, debug=True)
